@@ -15,7 +15,5 @@ jobs:
         uses: oprypin/install-crystal@v1
       - name: Download source
         uses: actions/checkout@v2
-      - name: Install dependencies
-        run: shards install
       - name: Build
-        run: make
+        run: make -j
